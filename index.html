@@ -12,17 +12,17 @@
   
   
  
- <header class='navbar navbar-expand-lg  navbar-light fixed-top ' style="background-color: #DCDCDC " >
+ <header class='navbar navbar-expand-lg  navbar-light fixed-top   ' style="background-color: #DCDCDC " >
   
-    <div class='row'>
-	  <div class='col col-lg-6'>
-        <a  class="navbar-brand" href="#"><h1>Gosha.</h1></a>
+    
+	  <div >
+        <a  class="navbar-brand display-none" href="#"><h1>Gosha.</h1></a>
       </div>
 	  
 	  
-    <div class="col col-lg-6 collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-       <li class="nav-item">
+    
+    <ul class="navbar-nav d-none d-md-block    justify-content-center  navbar-collapse">
+       <li class="nav-item">  
         <a class="nav-link" href="#hello">HELLO</a></li>
        <li class="nav-item">
         <a class="nav-link" href="#">SKILLS</a></li>
@@ -34,8 +34,20 @@
         <a class="nav-link" href="#">CONTACT ME</a></li>
 		 
 	</ul>
-	</div>
-   </div>
+	
+	
+	<div class="dropdown  d-xs-block  d-md-none d-lg-none d-xl-none">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+    HELLO
+  </a>
+ <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">SKILLS</a>
+    <a class="dropdown-item" href="#">PORTFOLIO</a>
+    <a class="dropdown-item" href="#">FEEDBACK</a>
+	<a class="dropdown-item" href="#">CONTACT ME</a>
+  </div>
+</div>
+
    
     
   </header>
@@ -48,8 +60,12 @@
     
 	
 	</div>
-    <div class="col-lg-6">
-      <img  src='photo.jpg' class='img-fluid shadow-drop-2-center' >
+    <div class="col-lg-6 myphoto">
+	<!-- анимация лазера -->
+	<svg><circle class='wood-wheel' r='20'  cx="50%" cy="50%" fill='red'/></svg>
+	<!-- анимация лазера -->
+	
+     <img  src='photo.jpg' class='img-fluid ' >
     </div>
 	</div>
     </div>
@@ -78,7 +94,7 @@
 	</div>
 </div>
 </main>
-<footer><div class="container-fluid p-5">
+<footer><div class="container-fluid ">
 <h2>Portfolio.</h2>
 В разработке</div></footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
